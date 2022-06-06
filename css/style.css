@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 4rem 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#ImgSet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+
+#ImgSet li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+#ImgSet img {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+@media all and (min-width: 600px) {
+  #ImgSet {
+    flex-direction: row;
+  }
+}
+
+@media all and (min-width: 1025px) {
+  #ImgSet {
+    width: 80%;
+    max-width: 1280px;
+  }
+
+  #ImgSet img {
+    width: 80%;
+  }
+
+}
